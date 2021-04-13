@@ -75,3 +75,7 @@ into the corresponding field (id, name, etc).
 ### Guidelines
 
 * Keep XPath expressions as simple as possible.
+
+# Andres Felipe Garcia Rendon
+
+- [Github](https://github.com/andres0191) - [Twitter](https://twitter.com/andres0191) - [Linkedin](https://www.linkedin.com/in/anfegar/)
