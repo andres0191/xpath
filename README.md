@@ -45,31 +45,32 @@ Define XPath expressions inside an XLST file to extract information from given H
 
 Develop the proper XPath expressions inside XSLT files (using the above template) to fully extract the item information (id, name, description, location, url, image url, price and end date) listed in the following HTML pages:
 
-● Exercise_1.html
-● Exercise_2.html
-● Exercise_3.html
-● Exercise_4.html
-● Exercise_5.html
+- [Exercise_1.html](https://github.com/andres0191/xpath/blob/master/HTML/Exercise_1.html)
+- [Exercise_2.html](https://github.com/andres0191/xpath/blob/master/HTML/Exercise_1.html)
+- [Exercise_3.html](https://github.com/andres0191/xpath/blob/master/HTML/Exercise_3.html)
+- [Exercise_4.html](https://github.com/andres0191/xpath/blob/master/HTML/Exercise_4.html)
+- [Exercise_5.html](https://github.com/andres0191/xpath/blob/master/HTML/Exercise_5.html)
 
 All the above HTML files contain auction information. Each one of them has a very different structure, so the XPath expressions needed to extract the information will vary from one HTML file to another. You need to provide the XPath expression that will match every node containing auctions (the XPath expression inside the “select” attribute of the xsl:for-each element in the XSLT template), and then you will provide the relative XPath expressions to grab each value
 into the corresponding field (id, name, etc).
 
 ### For each one of these HTML files, you must provide:
 
-● The XSLT file containing the proper XPath expressions that fully extracts all auctions
-and its fields from the HTML file. File name should be “Exercise_<number>.xslt”.
-● The resulting XML file with all the auctions extracted, with its fields. Filename should be
-“Exercise_<number>_results.xml”.
-Tools you will need:
-● Text editor
-● Web browser
-● XPath reference manual
-○ [xpath w3school](https://www.w3schools.com/xml/xpath_intro.asp)
-○ [xpath developer mozilla](https://developer.mozilla.org/en-US/docs/Web/XPath)
-● XPath evaluation tool. Mozilla Firefox and Google Chrome browsers provide built-in
-functionality to evaluate XPath expressions (inside Developer Tools).
-● An XSLT transformation engine. There are some tools online such as:
-○ [transformer xsl](https://www.freeformatter.com/xsl-transformer.html)
-○ [xsltransformation](http://www.utilities-online.info/xsltransformation/)
-Guidelines
-● Keep XPath expressions as simple as possible.
+* The XSLT file containing the proper XPath expressions that fully extracts all auctions and its fields from the HTML file. File name should be “Exercise_<number>.xslt”.
+* The resulting XML file with all the auctions extracted, with its fields. Filename should be “Exercise_<number>_results.xml”.
+
+### Tools you will need:
+
+* Text editor
+* Web browser
+* XPath reference manual
+* [xpath w3school](https://www.w3schools.com/xml/xpath_intro.asp)
+* [xpath developer mozilla](https://developer.mozilla.org/en-US/docs/Web/XPath)
+* XPath evaluation tool. Mozilla Firefox and Google Chrome browsers provide built-in functionality to evaluate XPath expressions (inside Developer Tools).
+* An XSLT transformation engine. There are some tools online such as:
+* [transformer xsl](https://www.freeformatter.com/xsl-transformer.html)
+* [xsltransformation](http://www.utilities-online.info/xsltransformation/)
+
+### Guidelines
+
+* Keep XPath expressions as simple as possible.
