@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:template match="/">
+        <items>
+            <!--Use "select" attr to write the XPath expression that will select ALL items -->
+            <!--Example: html[1]/body[1]/div[@id='auctions'] -->
+            <xsl:for-each select="/html/body/table[1]/tbody/tr[position()>1]">
+                <item>
+                    <id>
+                        <xsl:value-of select="td[2]/div"/>
+                    </id>
+                    <name>
+                        <xsl:value-of select="td[2]/a"/>
+                    </name>
+                    <location>
+                        <xsl:value-of select="td[6]"/>
+                    </location>
+                    <url>
+                        <xsl:value-of select="td[2]/a"/>
+                    </url>
+                    <img>
+                        <xsl:value-of select="td[1]/a/img"/>
+                    </img>
+                    <price>
+                        <xsl:value-of select="td[8]"/>
+                    </price>
+                    <end-date>
+                        <xsl:value-of select="td[7]/label"/>
+                    </end-date>
+                </item>
+            </xsl:for-each>
+        </items>
+    </xsl:template>
+</xsl:stylesheet>
