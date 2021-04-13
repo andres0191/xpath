@@ -1,5 +1,6 @@
 # XPATH
 
+![xpath img](https://github.com/andres0191/xpath/blob/master/src/xpathimg.png)
 XPath is a query language used to select nodes from an XML document. Since HTML pages can be expressed as well formed XML  documents, XPath could be used to extract relevant data from web pages of interest. This is one of the most used techniques by web scraping tools.
 
 ## Exercise 1 - Extracting item information from Auction web pages
