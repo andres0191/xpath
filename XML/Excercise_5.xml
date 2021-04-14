@@ -10,7 +10,8 @@
                         <xsl:value-of select="{Relative XPath to fetch the id}"/>
                     </id>
                     <name>
-                        <xsl:value-of select="{Relative XPath to fetch the name}"/>
+                        <xsl:value-of select="/p"/>
+                        <!-- /html/body/div[2]/div[2]/div[2]/div[2]/div[1]/p[6] -->
                     </name>
                     <location>
                         <xsl:value-of select="{Relative XPath to fetch the location}"/>
