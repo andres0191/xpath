@@ -4,7 +4,7 @@
         <items>
             <!--Use "select" attr to write the XPath expression that will select ALL items -->
             <!--Example: html[1]/body[1]/div[@id='auctions'] -->
-            <xsl:for-each select="{Enter here the XPath expr to select all items}">
+            <xsl:for-each select='//*[@id="contentRightBody"]'>
                 <item>
                     <id>
                         <xsl:value-of select="{Relative XPath to fetch the id}"/>

@@ -4,28 +4,22 @@
         <items>
             <!--Use "select" attr to write the XPath expression that will select ALL items -->
             <!--Example: html[1]/body[1]/div[@id='auctions'] -->
-            <xsl:for-each select="/html/body/form/div/div[3]/div[2]/div[3]/div">
+            <xsl:for-each select="//div[@class='section group product-boxes']/div">
                 <item>
-                    <id>
-                        <xsl:value-of select="{Relative XPath to fetch the id}"/>
-                    </id>
                     <name>
-                        <xsl:value-of select="div/div[1]"/>
+                        <xsl:value-of select="div[2]/div[1]/a"/>
                     </name>
-                    <location>
-                        <xsl:value-of select="{Relative XPath to fetch the location}"/>
-                    </location>
                     <url>
-                        <xsl:value-of select="{Relative XPath to fetch the URL}"/>
+                        <xsl:value-of select="div[2]/div[1]/a"/>
                     </url>
                     <img>
-                        <xsl:value-of select="{Relative XPath to fetch the img URL}"/>
+                        <xsl:value-of select="div[1]/img/@src"/>
                     </img>
                     <price>
-                        <xsl:value-of select="{Relative XPath to fetch the price}"/>
+                        <xsl:value-of select="div[2]/div[2]/ul/li[2]"/>
                     </price>
                     <end-date>
-                        <xsl:value-of select="{Relative XPath to fetch the end date}"/>
+                        <xsl:value-of select="div[2]/div[2]/ul/li[1]"/>
                     </end-date>
                 </item>
             </xsl:for-each>

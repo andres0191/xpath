@@ -19,7 +19,7 @@
                         <xsl:value-of select="td[2]/div[1]/a"/>
                     </url>
                     <img>
-                        <xsl:value-of select="td[1]/a/img"/>
+                        <xsl:value-of select="td[1]/a/img/@src"/>
                     </img>
                     <price>
                         <xsl:value-of select="td[2]/div[2]/div[2]"/>
