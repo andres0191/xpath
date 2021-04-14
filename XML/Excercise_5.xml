@@ -4,29 +4,25 @@
         <items>
             <!--Use "select" attr to write the XPath expression that will select ALL items -->
             <!--Example: html[1]/body[1]/div[@id='auctions'] -->
-            <xsl:for-each select='/html/body/div[2]/div[2]/div[2]/div[2]/div[1]'>
+            <xsl:for-each select="/html/body/div[2]/div[2]/div[2]/div[2]/div[1]/p[contains(.,'Auction #')]">
                 <item>
                     <id>
                         <xsl:value-of select="p[contains(.,'Auction #')]"/>
                     </id>
                     <name>
-                        <xsl:value-of select="p[contains(.,'Auction #')]/following-sibling::p[1]"/>
+                        <xsl:value-of select="following-sibling::p[1]"/>
                     </name>
-                    <location>
-                        <xsl:value-of select=""/>
-                    </location>
                     <url>
-                        <xsl:value-of select="p[contains(.,'Auction #')]/following-sibling::p[1]/following-sibling::ul/following-sibling::p[1]"/>
-                        <!-- /p[11]/a -->
+                        <xsl:value-of select="following-sibling::p[1]/following-sibling::ul/following-sibling::p[1]"/>
                     </url>
                     <information>
-                        <xsl:value-of select="p[contains(.,'Auction #')]/following-sibling::p[1]/following-sibling::ul/following-sibling::p[2]"/>
+                        <xsl:value-of select="following-sibling::p[1]/following-sibling::ul/following-sibling::p[2]"/>
                     </information>
                     <price>
-                        <xsl:value-of select="p[contains(.,'Auction #')]/following-sibling::p[1]/following-sibling::ul/li[2]"/>
+                        <xsl:value-of select="following-sibling::p[1]/following-sibling::ul/li[2]"/>
                     </price>
                     <end-date>
-                        <xsl:value-of select="p[contains(.,'Auction #')]/following-sibling::p[1]/following-sibling::ul/li[1]"/>
+                        <xsl:value-of select="following-sibling::p[1]/following-sibling::ul/li[1]"/>
                     </end-date>
                 </item>
             </xsl:for-each>
