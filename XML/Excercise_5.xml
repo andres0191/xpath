@@ -4,7 +4,7 @@
         <items>
             <!--Use "select" attr to write the XPath expression that will select ALL items -->
             <!--Example: html[1]/body[1]/div[@id='auctions'] -->
-            <xsl:for-each select="/html/body/div[2]/div[2]/div[2]/div[2]/div[1]/p[contains(.,'Auction #')]">
+            <xsl:for-each select="//p[contains(.,'Auction #')]">
                 <item>
                     <id>
                         <xsl:value-of select="p[contains(.,'Auction #')]"/>
